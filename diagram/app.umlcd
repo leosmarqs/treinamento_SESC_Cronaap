@@ -1,6 +1,7 @@
 {
   "cells": [
     {
+      "allowConfiguration": false,
       "angle": 0,
       "apiPath": "src/main/webapp/raml/app/api.raml",
       "attrs": {
@@ -66,6 +67,7 @@
         "height": 0,
         "width": 0
       },
+      "sqlDebugging": false,
       "type": "basic.Rect",
       "visionLikePackage": false,
       "z": 1
@@ -77,6 +79,9 @@
         "name:java.lang.String"
       ],
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#F0F0F0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -225,6 +230,9 @@
         "user:User"
       ],
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#fffec0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -403,7 +411,7 @@
         "id:java.lang.Integer",
         "type:java.lang.String",
         "command:java.lang.String",
-        "date:java.sql.Timestamp",
+        "date:java.sql.Date",
         "objectData:java.lang.StringBuffer",
         "user:java.lang.String",
         "host:java.lang.String",
@@ -415,6 +423,9 @@
         "error:java.lang.String"
       ],
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#F0F0F0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -430,8 +441,8 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 94,
-          "text": "Inteiro\nTexto\nTexto\nData e Hora com Fuso\nTexto Longo\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
+          "ref-x": 140,
+          "text": "Inteiro\nTexto\nTexto\nData e Hora\nTexto Longo\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#F0F0F0",
@@ -825,7 +836,7 @@
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
         "height": 230,
-        "width": 225
+        "width": 216
       },
       "tableName": "AUDIT_LOG",
       "type": "uml.Class",
@@ -843,6 +854,9 @@
         "appVersion:java.lang.String"
       ],
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#F0F0F0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -1106,6 +1120,9 @@
         "expirationDate:java.sql.Timestamp"
       ],
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#F0F0F0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -1121,7 +1138,7 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 121,
+          "ref-x": 120,
           "text": "Texto\nCarimbo de Data e Hora\n"
         },
         ".uml-class-methods-rect": {
@@ -1253,12 +1270,172 @@
       "angle": 0,
       "attributes": [
         "id:java.lang.String",
+        "Info:java.lang.String"
+      ],
+      "attrs": {
+        ".": {
+          "display": "normal"
+        },
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 60,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* id\nInfo\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 156,
+          "text": "Texto\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,100)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Localizacao"
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isNotEmpty": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "Info",
+          "type": "java.lang.String",
+          "dbName": "Info",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Info",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "9cd2b5e1-01eb-42ff-a2df-96c8bece35ad",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "Localizacao",
+      "position": {
+        "x": 1460,
+        "y": 208
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Class",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 120,
+        "width": 195
+      },
+      "swagger": false,
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "usePhysicalNames": false,
+      "z": 27
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "id:java.lang.String",
         "loginProvider:java.lang.String",
         "providerDisplayName:java.lang.String",
         "providerKey:java.lang.String",
         "user:User"
       ],
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#F0F0F0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -1523,6 +1700,594 @@
     {
       "angle": 0,
       "attributes": [
+        "id:java.util.UUID",
+        "Periodo:java.lang.String",
+        "ativo:java.lang.Boolean",
+        "datainicial:java.util.Date",
+        "datafinal:java.util.Date"
+      ],
+      "attrs": {
+        ".": {
+          "display": "normal"
+        },
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 120,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* id\nPeriodo\nativo\ndatainicial\ndatafinal\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 152,
+          "text": "UUID\nTexto\nLógico\nData\nData\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,160)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Periodo"
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.util.UUID",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isNotEmpty": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "Periodo",
+          "type": "java.lang.String",
+          "dbName": "Periodo",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Periodo",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "ativo",
+          "type": "java.lang.Boolean",
+          "dbName": "ativo",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ativo",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "datainicial",
+          "type": "java.util.Date",
+          "dbName": "datainicial",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Datainicial",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "datafinal",
+          "type": "java.util.Date",
+          "dbName": "datafinal",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Datafinal",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "b92b97d3-76ec-4872-af2e-aa1fcf786782",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "Periodo",
+      "position": {
+        "x": 1070,
+        "y": 230
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Class",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 150,
+        "width": 198
+      },
+      "swagger": false,
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "usePhysicalNames": false,
+      "z": 28
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "id:java.lang.String",
+        "vaga:Vaga",
+        "user:User",
+        "datareserva:java.util.Date",
+        "ativo:java.lang.Boolean",
+        "periodo:java.lang.String"
+      ],
+      "attrs": {
+        ".": {
+          "display": "normal"
+        },
+        ".uml-class-attrs-rect": {
+          "fill": "#fffec0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 140,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "fill": "#000",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* id\nvaga\nuser\ndatareserva\nativo\nperiodo\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 152,
+          "text": "Texto\nVaga\nUser\nData\nLógico\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#fffec0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,180)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#fffec0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Reserva"
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isNotEmpty": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "vaga",
+          "type": "Vaga",
+          "dbName": "fk_vaga",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Vaga",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "user",
+          "type": "User",
+          "dbName": "fk_user",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "User",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "datareserva",
+          "type": "java.util.Date",
+          "dbName": "datareserva",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Datareserva",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "ativo",
+          "type": "java.lang.Boolean",
+          "dbName": "ativo",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ativo",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "periodo",
+          "type": "java.lang.String",
+          "dbName": "periodo",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Periodo",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "754cbcc0-a945-485a-a22a-a1021762e468",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "Reserva",
+      "position": {
+        "x": 1062,
+        "y": -38
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "AssociationClass",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 160,
+        "width": 198
+      },
+      "swagger": false,
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "usePhysicalNames": false,
+      "z": 30
+    },
+    {
+      "angle": 0,
+      "attributes": [
         "id:java.lang.String",
         "builtIn:java.lang.Boolean",
         "membershipEnabled:java.lang.Boolean",
@@ -1531,6 +2296,9 @@
         "application:Application"
       ],
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#F0F0F0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -1821,8 +2589,8 @@
         "normalizedName"
       ],
       "position": {
-        "x": 656,
-        "y": 312
+        "x": 622,
+        "y": 212
       },
       "primaryKeys": [
         "id"
@@ -1861,6 +2629,9 @@
         "securable:Securable"
       ],
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#fffec0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -2068,6 +2839,9 @@
         "application:Application"
       ],
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#F0F0F0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -2311,6 +3085,9 @@
         "picture:Image Upload (to Database)"
       ],
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#F0F0F0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -3011,8 +3788,8 @@
         "userName"
       ],
       "position": {
-        "x": 984,
-        "y": 38
+        "x": 612,
+        "y": -104
       },
       "primaryKeys": [
         "id"
@@ -3051,7 +3828,7 @@
       "tableName": "USER",
       "type": "uml.Class",
       "uniqueKeys": [],
-      "z": 2
+      "z": 25
     },
     {
       "angle": 0,
@@ -3061,6 +3838,9 @@
         "user:User"
       ],
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#fffec0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -3268,6 +4048,9 @@
         "user:User"
       ],
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#fffec0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -3470,6 +4253,232 @@
     {
       "angle": 0,
       "attributes": [
+        "id:java.util.UUID",
+        "Nome:java.lang.String",
+        "Status:java.lang.String",
+        "localizacao:Localizacao"
+      ],
+      "attrs": {
+        ".": {
+          "display": "normal"
+        },
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* id\nNome\nStatus\nlocalizacao\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 145,
+          "text": "UUID\nTexto\nTexto\nLocalizacao\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Vaga"
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.util.UUID",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isNotEmpty": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "Nome",
+          "type": "java.lang.String",
+          "dbName": "Nome",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Nome",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "Status",
+          "type": "java.lang.String",
+          "dbName": "Status",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Status",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "localizacao",
+          "type": "Localizacao",
+          "dbName": "fk_localizacao",
+          "label": "Localizacao",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "multitenantContext": "",
+          "pkType": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "isCascade": false,
+          "isVersion": false,
+          "idIndex": false,
+          "useOuterJoin": false
+        }
+      ],
+      "generateView": "Auto",
+      "id": "0e120057-5a62-4f0c-85b7-f6ab35f46b6e",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "Vaga",
+      "position": {
+        "x": 1440,
+        "y": -46
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": {
+        "delete": "Administrators",
+        "post": "Administrators",
+        "put": "Administrators"
+      },
+      "role": "Class",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 140,
+        "width": 219
+      },
+      "swagger": false,
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "usePhysicalNames": false,
+      "z": 33
+    },
+    {
+      "angle": 0,
+      "attributes": [
         "id:java.lang.String",
         "securable:Securable",
         "pattern:java.lang.String",
@@ -3484,6 +4493,9 @@
         "application:Application"
       ],
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".uml-class-attrs-rect": {
           "fill": "#fffec0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -3938,6 +4950,57 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "095a288b-ac3c-4900-9add-548dd1ee7101",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "user:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0"
+      },
+      "target": {
+        "id": "754cbcc0-a945-485a-a22a-a1021762e468"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 32
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -3981,7 +5044,58 @@
       "z": 23
     },
     {
+      "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "232f1495-23a7-4113-9083-08f26a1c36b5",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "vaga:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "0e120057-5a62-4f0c-85b7-f6ab35f46b6e"
+      },
+      "target": {
+        "id": "754cbcc0-a945-485a-a22a-a1021762e468"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 31
+    },
+    {
+      "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -4024,7 +5138,58 @@
       "z": "4"
     },
     {
+      "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "386938ac-a953-49ba-aa3e-e60d1a672047",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "1",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "localizacao:source"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToOne",
+      "source": {
+        "id": "0e120057-5a62-4f0c-85b7-f6ab35f46b6e"
+      },
+      "target": {
+        "id": "9cd2b5e1-01eb-42ff-a2df-96c8bece35ad"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 29
+    },
+    {
+      "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -4069,6 +5234,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -4123,6 +5291,9 @@
     },
     {
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -4177,6 +5348,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -4222,6 +5396,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -4266,6 +5443,9 @@
     },
     {
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -4310,6 +5490,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -4354,6 +5537,9 @@
     },
     {
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -4397,6 +5583,9 @@
     },
     {
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -4441,6 +5630,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -4485,6 +5677,9 @@
     },
     {
       "attrs": {
+        ".": {
+          "display": "none"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -4527,44 +5722,50 @@
       "z": "4"
     }
   ],
-  "selectedGroup": "1d7f906f-a526-482d-aaf4-08d227ae8c18",
+  "selectedGroup": "7c09b0ad-6688-479a-841a-4272ed4fc30c",
   "groups": [
     {
       "name": "Security",
       "id": "841bf2db-1dee-49fa-b19d-991b2ed50e4f",
-      "cells": [],
-      "groupPositions": []
-    },
-    {
-      "name": "",
-      "id": "1d7f906f-a526-482d-aaf4-08d227ae8c18",
       "cells": [
-        "56d9e678-741d-41e6-9b24-bccc58de1598",
         "2b76b50a-bb57-4354-a653-b71b1450ebff",
         "36b875ac-204a-4346-82e4-aabbd2c6b202",
         "2016ad54-a0f9-4337-ad10-694a48f0435c",
         "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
         "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
+        "56d9e678-741d-41e6-9b24-bccc58de1598",
+        "b92b97d3-76ec-4872-af2e-aa1fcf786782",
         "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
+        "0e120057-5a62-4f0c-85b7-f6ab35f46b6e",
         "b194a533-61d6-4661-b9da-ff80ce2835f9",
+        "9cd2b5e1-01eb-42ff-a2df-96c8bece35ad",
         "d92238a3-a37d-4cc6-a543-d0687dc207cd",
         "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
         "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
-        "fabe0aea-c05d-44a4-a87c-2e2c0a97e994"
+        "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
+        "79a9aae4-09b4-4f9a-8712-b78ad5a08e3e",
+        "754cbcc0-a945-485a-a22a-a1021762e468"
       ],
       "groupPositions": [
         {
-          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+          "idCell": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
           "position": {
-            "x": 668,
-            "y": 594
+            "x": 100,
+            "y": 34
           }
         },
         {
-          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
+          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
           "position": {
-            "x": 940,
-            "y": 594
+            "x": 1106,
+            "y": 406
+          }
+        },
+        {
+          "idCell": "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
+          "position": {
+            "x": 622,
+            "y": 212
           }
         },
         {
@@ -4582,12 +5783,126 @@
           }
         },
         {
-          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
           "position": {
-            "x": 984,
-            "y": 38
+            "x": 144,
+            "y": 530
           }
         },
+        {
+          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
+          "position": {
+            "x": 404,
+            "y": 342
+          }
+        },
+        {
+          "idCell": "79a9aae4-09b4-4f9a-8712-b78ad5a08e3e",
+          "position": {
+            "x": 1150,
+            "y": 566
+          }
+        },
+        {
+          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
+          "position": {
+            "x": 684,
+            "y": 26
+          }
+        },
+        {
+          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+          "position": {
+            "x": 668,
+            "y": 594
+          }
+        },
+        {
+          "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
+          "position": {
+            "x": 382,
+            "y": 36
+          }
+        },
+        {
+          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
+          "position": {
+            "x": 940,
+            "y": 594
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reserva",
+      "id": "7c09b0ad-6688-479a-841a-4272ed4fc30c",
+      "cells": [
+        "b92b97d3-76ec-4872-af2e-aa1fcf786782",
+        "0e120057-5a62-4f0c-85b7-f6ab35f46b6e",
+        "9cd2b5e1-01eb-42ff-a2df-96c8bece35ad",
+        "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+        "754cbcc0-a945-485a-a22a-a1021762e468"
+      ],
+      "groupPositions": [
+        {
+          "idCell": "9cd2b5e1-01eb-42ff-a2df-96c8bece35ad",
+          "position": {
+            "x": 1460,
+            "y": 208
+          }
+        },
+        {
+          "idCell": "0e120057-5a62-4f0c-85b7-f6ab35f46b6e",
+          "position": {
+            "x": 1440,
+            "y": -46
+          }
+        },
+        {
+          "idCell": "754cbcc0-a945-485a-a22a-a1021762e468",
+          "position": {
+            "x": 1062,
+            "y": -38
+          }
+        },
+        {
+          "idCell": "b92b97d3-76ec-4872-af2e-aa1fcf786782",
+          "position": {
+            "x": 1070,
+            "y": 230
+          }
+        },
+        {
+          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+          "position": {
+            "x": 612,
+            "y": -104
+          }
+        }
+      ]
+    },
+    {
+      "name": "",
+      "id": "1d7f906f-a526-482d-aaf4-08d227ae8c18",
+      "cells": [
+        "2b76b50a-bb57-4354-a653-b71b1450ebff",
+        "36b875ac-204a-4346-82e4-aabbd2c6b202",
+        "2016ad54-a0f9-4337-ad10-694a48f0435c",
+        "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
+        "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
+        "56d9e678-741d-41e6-9b24-bccc58de1598",
+        "b92b97d3-76ec-4872-af2e-aa1fcf786782",
+        "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
+        "0e120057-5a62-4f0c-85b7-f6ab35f46b6e",
+        "b194a533-61d6-4661-b9da-ff80ce2835f9",
+        "9cd2b5e1-01eb-42ff-a2df-96c8bece35ad",
+        "d92238a3-a37d-4cc6-a543-d0687dc207cd",
+        "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+        "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+        "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
+        "754cbcc0-a945-485a-a22a-a1021762e468"
+      ],
+      "groupPositions": [
         {
           "idCell": "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
           "position": {
@@ -4596,17 +5911,24 @@
           }
         },
         {
-          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
+          "idCell": "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
           "position": {
-            "x": 1106,
-            "y": 406
+            "x": 418,
+            "y": 594
           }
         },
         {
-          "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
+          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
           "position": {
-            "x": 382,
-            "y": 36
+            "x": 144,
+            "y": 530
+          }
+        },
+        {
+          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
+          "position": {
+            "x": 684,
+            "y": 26
           }
         },
         {
@@ -4624,17 +5946,45 @@
           }
         },
         {
-          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
+          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
           "position": {
-            "x": 144,
-            "y": 530
+            "x": 70,
+            "y": 240
           }
         },
         {
-          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
+          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
           "position": {
-            "x": 684,
-            "y": 26
+            "x": 940,
+            "y": 594
+          }
+        },
+        {
+          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+          "position": {
+            "x": 984,
+            "y": 38
+          }
+        },
+        {
+          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+          "position": {
+            "x": 668,
+            "y": 594
+          }
+        },
+        {
+          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
+          "position": {
+            "x": 1106,
+            "y": 406
+          }
+        },
+        {
+          "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
+          "position": {
+            "x": 382,
+            "y": 36
           }
         }
       ]
