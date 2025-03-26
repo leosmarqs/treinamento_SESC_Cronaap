@@ -1952,8 +1952,8 @@
       "modelType": "Table",
       "name": "Periodo",
       "position": {
-        "x": 1070,
-        "y": 230
+        "x": 1058,
+        "y": 182
       },
       "queries": [],
       "realName": "",
@@ -2830,6 +2830,355 @@
       "type": "uml.Class",
       "uniqueKeys": [],
       "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "SEQ_PROJETO:java.util.UUID",
+        "ID_PROJETO_NACIONAL:java.lang.String",
+        "NOM_PROJETO:java.lang.String",
+        "DES_PROJETO:java.lang.String",
+        "DTA_INICIO:java.util.Date",
+        "DTA_FINAL:java.util.Date",
+        "DTA_CRIACAO:java.util.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 160,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* SEQ_PROJETO\nID_PROJETO_NACIONAL\nNOM_PROJETO\nDES_PROJETO\nDTA_INICIO\nDTA_FINAL\nDTA_CRIACAO\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 186,
+          "text": "UUID\nTexto\nTexto\nTexto\nData\nData\nData\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,200)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "SPE_PROJETOS"
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "SEQ_PROJETO",
+          "type": "java.util.UUID",
+          "dbName": "SEQ_PROJETO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "SEQ  PROJETO",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isNotEmpty": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "ID_PROJETO_NACIONAL",
+          "type": "java.lang.String",
+          "dbName": "ID_PROJETO_NACIONAL",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "ID  PROJETO  NACIONAL",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "NOM_PROJETO",
+          "type": "java.lang.String",
+          "dbName": "NOM_PROJETO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "NOM  PROJETO",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "DES_PROJETO",
+          "type": "java.lang.String",
+          "dbName": "DES_PROJETO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "DES  PROJETO",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "DTA_INICIO",
+          "type": "java.util.Date",
+          "dbName": "DTA_INICIO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "DTA  INICIO",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "DTA_FINAL",
+          "type": "java.util.Date",
+          "dbName": "DTA_FINAL",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "DTA  FINAL",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        },
+        {
+          "name": "DTA_CRIACAO",
+          "type": "java.util.Date",
+          "dbName": "DTA_CRIACAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "DTA  CRIACAO",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "isNotEmpty": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "409cbd30-2ff9-4cf9-be4c-2a8b542473d0",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "SPE_PROJETOS",
+      "position": {
+        "x": 694,
+        "y": -24
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Class",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 170,
+        "width": 225
+      },
+      "swagger": true,
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "usePhysicalNames": true,
+      "z": 35
     },
     {
       "angle": 0,
@@ -3828,7 +4177,7 @@
       "tableName": "USER",
       "type": "uml.Class",
       "uniqueKeys": [],
-      "z": 25
+      "z": 34
     },
     {
       "angle": 0,
@@ -5047,7 +5396,7 @@
       "associationType": "Association",
       "attrs": {
         ".": {
-          "display": "normal"
+          "display": "none"
         },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
@@ -5444,7 +5793,7 @@
     {
       "attrs": {
         ".": {
-          "display": "none"
+          "display": "normal"
         },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
@@ -5722,7 +6071,7 @@
       "z": "4"
     }
   ],
-  "selectedGroup": "7c09b0ad-6688-479a-841a-4272ed4fc30c",
+  "selectedGroup": "ed445172-b705-448d-a91d-54c4db91e5ea",
   "groups": [
     {
       "name": "Security",
@@ -5748,10 +6097,31 @@
       ],
       "groupPositions": [
         {
-          "idCell": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
+          "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
           "position": {
-            "x": 100,
-            "y": 34
+            "x": 382,
+            "y": 36
+          }
+        },
+        {
+          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
+          "position": {
+            "x": 144,
+            "y": 530
+          }
+        },
+        {
+          "idCell": "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
+          "position": {
+            "x": 418,
+            "y": 594
+          }
+        },
+        {
+          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
+          "position": {
+            "x": 404,
+            "y": 342
           }
         },
         {
@@ -5762,16 +6132,23 @@
           }
         },
         {
-          "idCell": "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
+          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
           "position": {
-            "x": 622,
-            "y": 212
+            "x": 684,
+            "y": 26
           }
         },
         {
-          "idCell": "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
+          "idCell": "79a9aae4-09b4-4f9a-8712-b78ad5a08e3e",
           "position": {
-            "x": 418,
+            "x": 1150,
+            "y": 566
+          }
+        },
+        {
+          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
+          "position": {
+            "x": 940,
             "y": 594
           }
         },
@@ -5783,31 +6160,10 @@
           }
         },
         {
-          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
+          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
           "position": {
-            "x": 144,
-            "y": 530
-          }
-        },
-        {
-          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
-          "position": {
-            "x": 404,
-            "y": 342
-          }
-        },
-        {
-          "idCell": "79a9aae4-09b4-4f9a-8712-b78ad5a08e3e",
-          "position": {
-            "x": 1150,
-            "y": 566
-          }
-        },
-        {
-          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
-          "position": {
-            "x": 684,
-            "y": 26
+            "x": 504,
+            "y": -256
           }
         },
         {
@@ -5818,17 +6174,33 @@
           }
         },
         {
-          "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
+          "idCell": "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
           "position": {
-            "x": 382,
-            "y": 36
+            "x": 622,
+            "y": 212
           }
         },
         {
-          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
+          "idCell": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
           "position": {
-            "x": 940,
-            "y": 594
+            "x": 100,
+            "y": 34
+          }
+        }
+      ]
+    },
+    {
+      "name": "ProjetosSpe",
+      "id": "ed445172-b705-448d-a91d-54c4db91e5ea",
+      "cells": [
+        "409cbd30-2ff9-4cf9-be4c-2a8b542473d0"
+      ],
+      "groupPositions": [
+        {
+          "idCell": "409cbd30-2ff9-4cf9-be4c-2a8b542473d0",
+          "position": {
+            "x": 694,
+            "y": -24
           }
         }
       ]
@@ -5845,17 +6217,31 @@
       ],
       "groupPositions": [
         {
+          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+          "position": {
+            "x": 612,
+            "y": -104
+          }
+        },
+        {
+          "idCell": "b92b97d3-76ec-4872-af2e-aa1fcf786782",
+          "position": {
+            "x": 1058,
+            "y": 182
+          }
+        },
+        {
+          "idCell": "82f928e4-e6c5-4fbc-a039-04c119c038d4",
+          "position": {
+            "x": 898,
+            "y": -494
+          }
+        },
+        {
           "idCell": "9cd2b5e1-01eb-42ff-a2df-96c8bece35ad",
           "position": {
             "x": 1460,
             "y": 208
-          }
-        },
-        {
-          "idCell": "0e120057-5a62-4f0c-85b7-f6ab35f46b6e",
-          "position": {
-            "x": 1440,
-            "y": -46
           }
         },
         {
@@ -5866,17 +6252,10 @@
           }
         },
         {
-          "idCell": "b92b97d3-76ec-4872-af2e-aa1fcf786782",
+          "idCell": "0e120057-5a62-4f0c-85b7-f6ab35f46b6e",
           "position": {
-            "x": 1070,
-            "y": 230
-          }
-        },
-        {
-          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
-          "position": {
-            "x": 612,
-            "y": -104
+            "x": 1440,
+            "y": -46
           }
         }
       ]
@@ -5890,6 +6269,7 @@
         "2016ad54-a0f9-4337-ad10-694a48f0435c",
         "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
         "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
+        "409cbd30-2ff9-4cf9-be4c-2a8b542473d0",
         "56d9e678-741d-41e6-9b24-bccc58de1598",
         "b92b97d3-76ec-4872-af2e-aa1fcf786782",
         "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
@@ -5918,17 +6298,10 @@
           }
         },
         {
-          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
+          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
           "position": {
-            "x": 144,
-            "y": 530
-          }
-        },
-        {
-          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
-          "position": {
-            "x": 684,
-            "y": 26
+            "x": 940,
+            "y": 594
           }
         },
         {
@@ -5939,10 +6312,17 @@
           }
         },
         {
-          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
+          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
           "position": {
-            "x": 404,
-            "y": 342
+            "x": 668,
+            "y": 594
+          }
+        },
+        {
+          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
+          "position": {
+            "x": 684,
+            "y": 26
           }
         },
         {
@@ -5953,10 +6333,24 @@
           }
         },
         {
-          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
+          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
           "position": {
-            "x": 940,
-            "y": 594
+            "x": 1106,
+            "y": 406
+          }
+        },
+        {
+          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
+          "position": {
+            "x": 144,
+            "y": 530
+          }
+        },
+        {
+          "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
+          "position": {
+            "x": 382,
+            "y": 36
           }
         },
         {
@@ -5967,24 +6361,10 @@
           }
         },
         {
-          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
           "position": {
-            "x": 668,
-            "y": 594
-          }
-        },
-        {
-          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
-          "position": {
-            "x": 1106,
-            "y": 406
-          }
-        },
-        {
-          "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
-          "position": {
-            "x": 382,
-            "y": 36
+            "x": 404,
+            "y": 342
           }
         }
       ]
