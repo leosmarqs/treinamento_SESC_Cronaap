@@ -45,7 +45,7 @@ public class InvalidatedToken implements Serializable {
     */
     @Temporal(TemporalType.TIMESTAMP)
     @CronappColumn(attributeType="TIMESTAMP", label="{{'ExpirationDate' | translate}}")
-    @Column(name = "expiration_date", nullable = true, unique = false, insertable=true, updatable=true, columnDefinition = "TIMESTAMP")
+    @Column(name = "expiration_date", nullable = true, unique = false, insertable=true, updatable=true)
         
         private java.util.Date expirationDate;
 

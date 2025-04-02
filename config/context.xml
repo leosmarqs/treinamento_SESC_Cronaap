@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Context>
     <Resource accessToUnderlyingConnectionAllowed="true" driverClassName="org.h2.Driver" logAbandoned="true" name="jdbc/main" password="root" profile="DEV" removeAbandoned="false" removeAbandonedTimeout="60" type="javax.sql.DataSource" url="jdbc:h2:file:~/data;AUTO_SERVER=TRUE;MODE=LEGACY" username="root"/>
+    <Resource accessToUnderlyingConnectionAllowed="false" cloudDatabaseKey="" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" logAbandoned="true" name="jdbc/SQLServerCronapp" password="sae" profile="DEV" removeAbandoned="false" removeAbandonedTimeout="60" schema="" type="javax.sql.DataSource" url="jdbc:sqlserver://192.168.0.74:1433;trustServerCertificate=true;databaseName=Banco_teste_cronaap_vaga" username="sae"/>
     <Profile value="DEV"/>
     <Profile value="PROD"/>
 </Context>

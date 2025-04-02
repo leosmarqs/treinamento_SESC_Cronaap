@@ -45,7 +45,7 @@
         }
       },
       "chkApi": false,
-      "dataSource": "jdbc/main",
+      "dataSource": "jdbc/SQLServerCronapp",
       "disableCache": false,
       "id": "paperCell",
       "methods": [],
@@ -1421,7 +1421,7 @@
       "tableScheme": null,
       "type": "uml.Class",
       "usePhysicalNames": false,
-      "z": 27
+      "z": 35
     },
     {
       "angle": 0,
@@ -1702,7 +1702,7 @@
       "attributes": [
         "id:java.util.UUID",
         "Periodo:java.lang.String",
-        "ativo:java.lang.Boolean",
+        "ATIVO:java.lang.Boolean",
         "datainicial:java.util.Date",
         "datafinal:java.util.Date"
       ],
@@ -1720,7 +1720,7 @@
         ".uml-class-attrs-text": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "text": "* id\nPeriodo\nativo\ndatainicial\ndatafinal\n"
+          "text": "* id\nPeriodo\nATIVO\ndatainicial\ndatafinal\n"
         },
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -1831,14 +1831,14 @@
           "columnDefinition": ""
         },
         {
-          "name": "ativo",
+          "name": "ATIVO",
           "type": "java.lang.Boolean",
-          "dbName": "ativo",
+          "dbName": "ATIVO",
           "dbLength": "",
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",
-          "label": "Ativo",
+          "label": "ATIVO",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -1952,7 +1952,7 @@
       "modelType": "Table",
       "name": "Periodo",
       "position": {
-        "x": 1070,
+        "x": 1068,
         "y": 230
       },
       "queries": [],
@@ -1969,7 +1969,7 @@
       "tableScheme": null,
       "type": "uml.Class",
       "usePhysicalNames": false,
-      "z": 28
+      "z": 34
     },
     {
       "angle": 0,
@@ -2266,8 +2266,8 @@
       "modelType": "Table",
       "name": "Reserva",
       "position": {
-        "x": 1062,
-        "y": -38
+        "x": 1070,
+        "y": -52
       },
       "queries": [],
       "realName": "",
@@ -5748,31 +5748,10 @@
       ],
       "groupPositions": [
         {
-          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
-          "position": {
-            "x": 70,
-            "y": 240
-          }
-        },
-        {
           "idCell": "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
           "position": {
             "x": 622,
             "y": 212
-          }
-        },
-        {
-          "idCell": "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
-          "position": {
-            "x": 418,
-            "y": 594
-          }
-        },
-        {
-          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
-          "position": {
-            "x": 1106,
-            "y": 406
           }
         },
         {
@@ -5790,10 +5769,17 @@
           }
         },
         {
-          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
+          "idCell": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
           "position": {
-            "x": 684,
-            "y": 26
+            "x": 100,
+            "y": 34
+          }
+        },
+        {
+          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
+          "position": {
+            "x": 70,
+            "y": 240
           }
         },
         {
@@ -5804,6 +5790,27 @@
           }
         },
         {
+          "idCell": "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
+          "position": {
+            "x": 418,
+            "y": 594
+          }
+        },
+        {
+          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
+          "position": {
+            "x": 684,
+            "y": 26
+          }
+        },
+        {
+          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
+          "position": {
+            "x": 1106,
+            "y": 406
+          }
+        },
+        {
           "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
           "position": {
             "x": 382,
@@ -5811,10 +5818,10 @@
           }
         },
         {
-          "idCell": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
+          "idCell": "79a9aae4-09b4-4f9a-8712-b78ad5a08e3e",
           "position": {
-            "x": 100,
-            "y": 34
+            "x": 1150,
+            "y": 566
           }
         },
         {
@@ -5822,13 +5829,6 @@
           "position": {
             "x": 404,
             "y": 342
-          }
-        },
-        {
-          "idCell": "79a9aae4-09b4-4f9a-8712-b78ad5a08e3e",
-          "position": {
-            "x": 1150,
-            "y": 566
           }
         }
       ]
@@ -5844,6 +5844,13 @@
         "754cbcc0-a945-485a-a22a-a1021762e468"
       ],
       "groupPositions": [
+        {
+          "idCell": "754cbcc0-a945-485a-a22a-a1021762e468",
+          "position": {
+            "x": 1070,
+            "y": -52
+          }
+        },
         {
           "idCell": "0e120057-5a62-4f0c-85b7-f6ab35f46b6e",
           "position": {
@@ -5866,17 +5873,17 @@
           }
         },
         {
-          "idCell": "754cbcc0-a945-485a-a22a-a1021762e468",
+          "idCell": "b92b97d3-76ec-4872-af2e-aa1fcf786782",
           "position": {
-            "x": 1062,
-            "y": -38
+            "x": 1068,
+            "y": 230
           }
         },
         {
-          "idCell": "b92b97d3-76ec-4872-af2e-aa1fcf786782",
+          "idCell": "875fdc9a-9b8d-45be-a38a-fc1c44f67196",
           "position": {
-            "x": 1070,
-            "y": 230
+            "x": 1519,
+            "y": -211
           }
         }
       ]
@@ -5911,45 +5918,10 @@
           }
         },
         {
-          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
-          "position": {
-            "x": 668,
-            "y": 594
-          }
-        },
-        {
-          "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
-          "position": {
-            "x": 382,
-            "y": 36
-          }
-        },
-        {
-          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
-          "position": {
-            "x": 144,
-            "y": 530
-          }
-        },
-        {
           "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
           "position": {
             "x": 940,
             "y": 594
-          }
-        },
-        {
-          "idCell": "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
-          "position": {
-            "x": 656,
-            "y": 312
-          }
-        },
-        {
-          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
-          "position": {
-            "x": 70,
-            "y": 240
           }
         },
         {
@@ -5960,10 +5932,45 @@
           }
         },
         {
+          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+          "position": {
+            "x": 984,
+            "y": 38
+          }
+        },
+        {
+          "idCell": "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
+          "position": {
+            "x": 656,
+            "y": 312
+          }
+        },
+        {
+          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
+          "position": {
+            "x": 144,
+            "y": 530
+          }
+        },
+        {
+          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+          "position": {
+            "x": 668,
+            "y": 594
+          }
+        },
+        {
           "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
           "position": {
             "x": 684,
             "y": 26
+          }
+        },
+        {
+          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
+          "position": {
+            "x": 70,
+            "y": 240
           }
         },
         {
@@ -5981,10 +5988,10 @@
           }
         },
         {
-          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+          "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
           "position": {
-            "x": 984,
-            "y": 38
+            "x": 382,
+            "y": 36
           }
         }
       ]
